@@ -1,0 +1,111 @@
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(92, 0, 104));
+    background-repeat: no-repeat;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-content{
+    background-color: rgb(68, 36, 82);
+    width: 750px;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    color: wheat;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#fafa{
+    font-size: 100px;
+    color:wheat;
+    font-weight: bold;
+}
+
+.description{
+    padding: 20px;
+    padding-right: 40px;
+    box-shadow: inset -10px 0 0 0 wheat;
+}
+
+.pp{
+    height: fit-content;
+    position: relative;
+}
+
+#ppimg{
+    transition: 0.5s;
+    width: 0px;
+    height: 400px;
+}
+
+#ppimg2{
+    transition: 0.5s;
+    height: 0px;
+}
+
+.badge{
+    display: none;
+    transition: 0.5s;
+}
+
+#pointer{
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 767px) {
+
+    .main-content{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 85%;
+        max-height: 550px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-auto-flow: dense;
+    }
+
+    .pp{
+        width: 100%;
+        margin-bottom: auto;
+        grid-row: 1;
+        box-shadow: inset 0 120px 0 0 wheat;
+    }
+
+    #ppimg2{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 100%;
+    }
+
+    .badge{
+        color: rgb(68, 36, 82);
+        background-color: wheat;
+        padding: 10px;
+        border-radius: 100%;
+        display: block;
+        position: absolute;
+        top: 63%;
+        left: 60%;
+    }
+
+    .description{
+        padding: 20px;
+        box-shadow: unset;
+    }
+
+    #fafa{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .badge{
+        top: 63%;
+        left: 63%;
+    }
+}
