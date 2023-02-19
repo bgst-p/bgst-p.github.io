@@ -37,17 +37,16 @@ setInterval(function() {
     } else {
         pointer.style.opacity = 1;
     }
-
-}, 800);
+}, 600);
 
 setInterval(function() {
     y++;
-    if (y == 18) {
+    if (y == 20) {
         y = 0;
     }
 
-    let text = "'project.' ";
-    let result = text.slice(-y);
+    let text = "'project'..";
+    let result = text.slice(0, y);
     document.getElementById("project").innerHTML = result;
 
-}, 200);
+}, 250);
