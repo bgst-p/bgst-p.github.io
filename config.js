@@ -13,7 +13,7 @@ setInterval(function() {
 
     reso.innerHTML = w+" x "+h;
 
-    if (w <= 766.5){
+    if (w <= 767){
         ppimg.style.display = "none"
         ppimg.style.width = "0px"
         ppimg2.style.display = "block"
