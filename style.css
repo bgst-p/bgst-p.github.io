@@ -163,11 +163,8 @@ a{
     }
 
     .NF{
-        font-size: 20px;
-    }
-
-    .nameP{
-        padding-left: 15px;
+        font-size: 18px;
+        grid-template-columns: auto 15%;
     }
 
 }
