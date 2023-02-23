@@ -4,6 +4,8 @@ const explain = document.getElementById("explain")
 const ppimg = document.getElementById("ppimg")
 const ppimg2 = document.getElementById("ppimg2")
 const badge = document.getElementById("badge")
+const seeP = document.getElementById("seeP")
+const NF = document.getElementById("NF")
 var x = 0;
 var y = 0;
 
@@ -50,3 +52,25 @@ setInterval(function() {
     document.getElementById("project").innerHTML = result;
 
 }, 250);
+
+function seeProject(){
+    if(seeP.innerHTML === '<i class="fa fa-chevron-down"></i>'){
+        seeP.innerHTML = '<i class="fa fa-chevron-up"></i>';
+        seeP.style.backgroundColor = "rgb(68, 36, 82)";
+        seeP.style.color = "wheat";
+        NF.style.display = "block";
+        setTimeout(function(){
+            NF.style.marginTop = "0";
+            NF.style.opacity = "1";
+        }, 200)
+    }else{
+        seeP.innerHTML = '<i class="fa fa-chevron-down"></i>';
+        seeP.style.backgroundColor = "wheat";
+        seeP.style.color = "rgb(68, 36, 82)";
+        NF.style.marginTop = "-100px";
+        NF.style.opacity = "0";
+        setTimeout(function(){
+            NF.style.display = "none";
+        }, 500)
+    }
+}

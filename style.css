@@ -69,15 +69,47 @@ a{
     justify-content: center;
     align-items: center;
     width: 750px;
+    background-color: rgb(68, 36, 82);
+    border-radius: 10px;
+}
+
+.seeT{
+    color: wheat;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.seeP{
+    color: rgb(68, 36, 82);
+    background-color: wheat;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: inset 0 0px 0 0 rgb(117, 61, 141);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.seeP:hover{
+    box-shadow: inset 0 -50px 0 0 rgb(117, 61, 141);
 }
 
 .NF{
+    opacity: 0;
+    display: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(68, 36, 82);
-    display: grid;
-    grid-template-columns: auto 10%;
+    margin-top: -100px;
     font-size: 25px;
     font-weight: bold;
+    transition: 0.5s;
+}
+
+.subNF{
+    display: grid;
+    grid-template-columns: auto 10%;
     gap: 0;
 }
 
@@ -85,13 +117,12 @@ a{
     background-color: wheat;
     padding-left: 20px;
     box-shadow: inset 0px 0 0 0 rgb(68, 36, 82);
-    border-radius: 50px 0 0 50px;
     transition: 0.5s;
     border: 0;
 }
 
 .nameP:hover{
-    box-shadow: inset -800px 0 0 0 rgb(68, 36, 82);
+    box-shadow: inset -800px 0 0 0 rgb(117, 61, 141);
     color: wheat;
 }
 
@@ -99,13 +130,12 @@ a{
     background-color: wheat;
     text-align: center;
     box-shadow: inset 0px 0 0 0 rgb(68, 36, 82);
-    border-radius: 0 50px 50px 0;
     transition: 0.5s;
     border: 0;
 }
 
 .linkP:hover{
-    box-shadow: inset 100px 0 0 0 rgb(68, 36, 82);
+    box-shadow: inset 100px 0 0 0 rgb(117, 61, 141);
     color: wheat;
 }
 
