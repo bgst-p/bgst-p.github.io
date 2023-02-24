@@ -5,11 +5,6 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-a{
-    text-decoration: none;
-    padding: 10px;
-}
-
 .main-content{
     margin: auto;
     justify-content: center;
@@ -111,6 +106,13 @@ a{
     display: grid;
     grid-template-columns: auto 10%;
     gap: 0;
+}
+
+.subNF a{
+    text-decoration: none;
+    color: rgb(117, 61, 141);
+    padding: 10px;
+    padding-left: 15px;
 }
 
 .nameP{
