@@ -56,8 +56,6 @@ setInterval(function() {
 function seeProject(){
     if(seeP.innerHTML === '<i class="fa fa-chevron-down"></i>'){
         seeP.innerHTML = '<i class="fa fa-chevron-up"></i>';
-        seeP.style.backgroundColor = "rgb(68, 36, 82)";
-        seeP.style.color = "wheat";
         NF.style.display = "block";
         setTimeout(function(){
             NF.style.marginTop = "0";
@@ -65,8 +63,6 @@ function seeProject(){
         }, 200)
     }else{
         seeP.innerHTML = '<i class="fa fa-chevron-down"></i>';
-        seeP.style.backgroundColor = "wheat";
-        seeP.style.color = "rgb(68, 36, 82)";
         NF.style.marginTop = "-100px";
         NF.style.opacity = "0";
         setTimeout(function(){
