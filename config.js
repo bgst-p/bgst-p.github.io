@@ -1,11 +1,15 @@
 const reso = document.getElementById("reso")
 const pointer = document.getElementById("pointer")
+const conn = document.getElementById("conn")
 const explain = document.getElementById("explain")
 const ppimg = document.getElementById("ppimg")
 const ppimg2 = document.getElementById("ppimg2")
 const badge = document.getElementById("badge")
 const seeP = document.getElementById("seeP")
 const NF = document.getElementById("NF")
+const popup = document.getElementById("popup")
+const pp = document.getElementById("pp")
+const closepop = document.getElementById("closepop")
 var x = 0;
 var y = 0;
 
@@ -36,8 +40,10 @@ setInterval(function() {
     x++;
     if (x % 2 == 0) {
         pointer.style.opacity = 0;
+        conn.style.color = "rgb(117, 61, 141)"
     } else {
         pointer.style.opacity = 1;
+        conn.style.color = "lightgreen"
     }
 }, 600);
 
@@ -69,4 +75,20 @@ function seeProject(){
             NF.style.display = "none";
         }, 500)
     }
+}
+
+function dataUser(){
+    popup.style.zIndex = "1"
+    popup.style.opacity = "1"
+    popup.style.width = "100%"
+    pp.style.backgroundColor = "wheat"
+}
+
+function closeUser(){
+    popup.style.opacity = "0"
+    popup.style.width = "0"
+    pp.style.backgroundColor = "rgb(68, 36, 82)"
+    setTimeout(function (){
+        popup.style.zIndex = "-1"
+    }, 200)
 }
