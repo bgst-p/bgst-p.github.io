@@ -43,7 +43,7 @@ setInterval(function() {
         conn.style.color = "rgb(117, 61, 141)"
     } else {
         pointer.style.opacity = 1;
-        conn.style.color = "lightgreen"
+        conn.style.color = "rgb(68, 36, 82)"
     }
 }, 600);
 
