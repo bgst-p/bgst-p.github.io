@@ -94,6 +94,14 @@
 
         ops.innerHTML = result.os.name
         opsv.innerHTML = result.os.version
+
+        if(browsern.innerHTML == "undefined"){browsern.innerHTML = "(?)"}
+        if(browserv.innerHTML == "undefined"){browserv.innerHTML = "(?)"}
+        if(devicet.innerHTML == "undefined"){devicet.innerHTML = "PC/etc."}
+        if(devicev.innerHTML == "undefined"){devicev.innerHTML = "(?)"}
+        if(devicen.innerHTML == "undefined"){devicen.innerHTML = "(?)"}
+        if(ops.innerHTML == "undefined"){ops.innerHTML = "(?)"}
+        if(opsv.innerHTML == "undefined"){opsv.innerHTML = "(?)"}
     </script>
 </body>
 </html>
